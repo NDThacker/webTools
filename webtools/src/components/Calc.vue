@@ -100,10 +100,14 @@ export default {
 	}
 	
 	#calcKeys{
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 10px;
-		padding: 25px;
+		/* display: grid;
+		grid-template-columns: repeat(4, 1fr); */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding: 1.5rem;
+		margin: auto;
 
 	}
 
@@ -113,12 +117,14 @@ export default {
 		border-radius: 15px;
 		max-width: 500px;
 		overflow: hidden;
+		margin: auto;
+
 	}
 	
 	#calcDisplay{
 		width: 100%;
-		padding: 20px;
-		font-size: 5rem;
+		padding: 0.5rem;
+		font-size: 4.5rem;
 		text-align: left;
 		border: none;
 		color: white;

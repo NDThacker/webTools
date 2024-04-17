@@ -1,18 +1,22 @@
 <template>
   <!--<img alt="Vue logo" src="./assets/logo.png">-->
   <!--<HelloWorld msg="Welcome to Your Vue.js App" second=11 />-->
-  <CalculatorTool/>
+  <!--<CalculatorTool/>-->
+  <CurrencyTool />
+
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import CalculatorTool from './components/Calc.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import CalculatorTool from './components/Calc.vue'
+import CurrencyTool from './components/CurrencyConverter.vue'; 
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-	CalculatorTool
+    // HelloWorld,
+	// CalculatorTool,
+	CurrencyTool
   }
 }
 </script>

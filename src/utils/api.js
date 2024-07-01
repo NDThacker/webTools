@@ -8,10 +8,7 @@ axios.defaults.headers.common['Authorization'] = authToken;
 export const getRateForCurrency = (inputCur, inputAmt, outputCur) => {
 	return axios.get(fxUrl + `/convert?from=${inputCur}&to=${outputCur}&amount=${inputAmt}`).then(response => {
 		if(response.data.success)
-		{
-			console.log(response);
 			return response.data.result;
-		}
 		else
 		{
 			let err = new Error();

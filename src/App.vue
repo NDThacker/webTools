@@ -1,23 +1,24 @@
 <template>
   <!--<img alt="Vue logo" src="./assets/logo.png">-->
   <!--<HelloWorld msg="Welcome to Your Vue.js App" second=11 />-->
-  <!--<CalculatorTool/>-->
-  <CurrencyTool />
+  <!--<CalculatorTool/>
+  <CurrencyTool />-->
+
+  <router-link to="/calc"> Calculator </router-link> 
+  <router-link to="/currency"> Currency Converter </router-link>
+
+  <div>
+	<router-view></router-view>
+  </div>
 
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import CalculatorTool from './components/Calc.vue'
-import CurrencyTool from './components/CurrencyConverter.vue'; 
 
 export default {
-  name: 'App',
-  components: {
-    // HelloWorld,
-	// CalculatorTool,
-	CurrencyTool
-  }
+  name: 'App'
 }
 </script>
 
